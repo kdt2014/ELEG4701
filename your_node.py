@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-#this example will pub turtle1/cmd_vel topic，message type is geometry_msgs::Twist, node name is velocity_publisher_last4 number of you SID,
-#example: sid 1155135432 and the node name will be velocity_publisher_5432
+#this example will pub turtle1/cmd_vel topic，message type is geometry_msgs::Twist, node name is velocity_publisher_last 3 number of you SID,
+#example: sid 1155135432 and the node name will be velocity_publisher_432
 
 # TODO 0: modify the package.xml file, add rospy dependence; set eniveriment in ./bashrc file so that you do not need to source every time
 # finish this task and show the result in the terminal. 
