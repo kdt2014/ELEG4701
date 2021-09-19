@@ -4,7 +4,7 @@
 import sys
 import rospy as ros 
 # if you use "import rospy", you must use rospy.**. example: rospy.loginfo(), there is a 
-# mistake in this code file related to this issue, please find and correct it  TODO 0
+# mistake in this code file related to this issue, please find and correct it  todo 0
 
 from geometry_msgs.msg import Twist
 from turtlesim.msg import Pose
@@ -16,7 +16,7 @@ def pose_callback(pose):
     ros.loginfo("Robot X = %f: Y=%f: Z = %f\n", pose.x, pose.y, pose.theta)
     ROBOT_X = pose.x
 
-# TODO 0: modify the code below so that you can pub velocity and subscribe the pose
+# todo 0: modify the code below so that you can pub velocity and subscribe the pose
 def move_turtle(modify_here, modify_here, modify_here):                              #modify code in this line
     global ROBOT_X
     ros.init_node('move_turtle', anonymous=False)
@@ -26,7 +26,7 @@ def move_turtle(modify_here, modify_here, modify_here):                         
     rate = rospy.Rate(10) 
     vel = Twist()
     while not ros.is_shutdown():
-        # TOTO 1: draw a circle, the linear velocity is π m/s, and radius is 1 m
+        # todo 1: draw a circle, the linear velocity is π m/s, and radius is π m
         # modify the code below and import something at the start of the file, you should use the π in math library rather than 3.14
         # if the x positon larger than 8, stop to draw, you need to input 3 parameters in terminal
 
