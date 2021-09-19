@@ -20,7 +20,7 @@ def velocity_publisher():
     while not rospy.is_shutdown():
 		# init geometry_msgs::Twist
         vel_msg = Twist()
-        # Todo 3: draw a circle, the linear velocity is π m/s, and radius is 1 m
+        # Todo 3: draw a circle, the linear velocity is π m/s, and radius is π m
         # modify the code below and import something at the start of the file, you should use the π in math library rather than 3.14
         vel_msg.linear.x = 0
         vel_msg.linear.y = 0
@@ -30,7 +30,7 @@ def velocity_publisher():
         vel_msg.angular.z = 0
 		# publish
         turtle_vel_pub.publish(vel_msg)
-        #TODO 3: modify the code below, let the terminal output 2 velocities,hold 3 digits after the decimal point
+        #Todo 4: modify the code below, let the terminal output 2 velocities,hold 3 digits after the decimal point
     	rospy.loginfo("Publsh turtle velocity command[ modify here]", 
 				vel_msg.linear.x, vel_msg.angular.z)
 		# delay as loop rate
